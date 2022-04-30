@@ -1,5 +1,7 @@
 # linktree-checker
 a checker i made in go to practice go
+
+**dont forget to put your wordlist into the directory**
 ## Installation
 ```git clone https://github.com/sluggish/linktree-checker```
 
