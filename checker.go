@@ -34,6 +34,8 @@ func main() {
 		} 
 		if res.StatusCode != 200 {
 			fmt.Println(color.Green + "[+] " + color.Reset + "linktr.ee/"+line + " is available")
+			file, _ := os.OpenFile("avaliable.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+			file.Write([]byte(line + "\n"))
 		}
 	}
 }
